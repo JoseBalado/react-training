@@ -26,5 +26,10 @@ export const getNavMenu = () => [
     title: "MENU.API",
     icon: <NetworkCheckOutlined />,
     link: "/home/api"
+  },
+  {
+    title: "MENU.OMDb",
+    icon: <NetworkCheckOutlined />,
+    link: "/home/omdb"
   }
 ];
