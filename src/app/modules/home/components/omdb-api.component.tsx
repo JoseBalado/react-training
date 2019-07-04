@@ -20,7 +20,7 @@ const columns = [
     numeric: false
   },
   {
-    id: "title",
+    id: "Title",
     type: "string",
     label: "OMDB.TITLE",
     numeric: false

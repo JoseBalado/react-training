@@ -7,7 +7,7 @@ const initialState: IMovieState = {
   loading: false
 };
 
-export const demoReducer: Reducer<IMovieState> = (
+export const movieReducer: Reducer<IMovieState> = (
   state: IMovieState = initialState,
   { type, payload }: AnyAction
 ) => {
