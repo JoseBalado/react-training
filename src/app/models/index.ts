@@ -7,3 +7,4 @@ export * from "./middleware.model";
 export * from "./form.model";
 export * from "./tab.model";
 export * from "./demo.model";
+export * from "./movie.model";
