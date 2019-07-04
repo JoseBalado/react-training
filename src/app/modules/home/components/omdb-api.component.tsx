@@ -28,7 +28,7 @@ export class APIDemo extends React.Component<IAPIDemoProps, IAPIDemoState> {
   }
 }
 
-const mapStateToProps = ({ movie: { loading, movie: movie } }: IRootState) => ({
+const mapStateToProps = ({ movie: { loading, movie } }: IRootState) => ({
   movie,
   loading
 });
