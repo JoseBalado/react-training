@@ -17,7 +17,7 @@ export const Routes: React.SFC = () => (
         </ViewWrapperComponent>
       </DefaultLayout>
 
-      <Redirect to="/home/redirect"/>
+      <Redirect to="/home/omdb"/>
 
       <DefaultLayout path="/error/:id">
         <ViewWrapperComponent>
