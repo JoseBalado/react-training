@@ -3,6 +3,7 @@ import {
   HomeOutlined,
   NotificationImportantOutlined,
   MessageOutlined,
+  LocalMovies,
   NetworkCheckOutlined
 } from "@material-ui/icons/";
 
@@ -29,7 +30,7 @@ export const getNavMenu = () => [
   },
   {
     title: "MENU.OMDb",
-    icon: <NetworkCheckOutlined />,
+    icon: <LocalMovies />,
     link: "/home/omdb"
   }
 ];
