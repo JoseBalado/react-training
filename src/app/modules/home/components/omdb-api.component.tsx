@@ -6,11 +6,11 @@ import { connect } from "react-redux";
 type StateProps = ReturnType<typeof mapStateToProps>;
 type DispatchProps = typeof mapDispatchToProps;
 
-export interface IAPIDemoProps extends StateProps, DispatchProps {}
+export interface IOMDbAPIProps extends StateProps, DispatchProps {}
 
-export interface IAPIDemoState {}
+export interface IOMDbAPIState {}
 
-export class APIDemo extends React.Component<IAPIDemoProps, IAPIDemoState> {
+export class OMDbAPI extends React.Component<IOMDbAPIProps, IOMDbAPIState> {
   componentDidMount = () => {
     this.props.fetchMovie({});
   };
@@ -40,4 +40,4 @@ const mapDispatchToProps = {
 export const OMDbAPIComponent = connect(
   mapStateToProps,
   mapDispatchToProps
-)(APIDemo);
+)(OMDbAPI);
