@@ -1,6 +1,6 @@
 import { ConnectedRouter } from "connected-react-router";
 import * as React from "react";
-import { Switch } from "react-router";
+import { Switch, Redirect } from "react-router";
 
 import { history } from "./config";
 import { ViewWrapperComponent } from "./shared/components";
@@ -16,6 +16,8 @@ export const Routes: React.SFC = () => (
           <HomeView />
         </ViewWrapperComponent>
       </DefaultLayout>
+
+      <Redirect to="/home/redirect"/>
 
       <DefaultLayout path="/error/:id">
         <ViewWrapperComponent>
