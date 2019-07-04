@@ -3,7 +3,7 @@ import { IDemo_TodoState, DemoActionType } from "./model";
 import { REQUEST, FAILURE, SUCCESS } from "../../shared/constants";
 
 const initialState: IDemo_TodoState = {
-  todos: [],
+  movie: { Title: '' },
   loading: false
 };
 
@@ -17,7 +17,7 @@ export const demoReducer: Reducer<IDemo_TodoState> = (
     case FAILURE(DemoActionType.FETCH_TODOS):
       return { ...state, loading: false };
     case SUCCESS(DemoActionType.FETCH_TODOS):
-      return { todos: payload.data, loading: false };
+      return { movie: payload.data, loading: false };
     default:
       return state;
   }
