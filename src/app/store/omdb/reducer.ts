@@ -1,5 +1,5 @@
 import { Reducer, AnyAction } from "redux";
-import { IMovieState, DemoActionType } from "./model";
+import { IMovieState, MovieActionType } from "./model";
 import { REQUEST, FAILURE, SUCCESS } from "../../shared/constants";
 
 const initialState: IMovieState = {
@@ -12,11 +12,11 @@ export const movieReducer: Reducer<IMovieState> = (
   { type, payload }: AnyAction
 ) => {
   switch (type) {
-    case REQUEST(DemoActionType.FETCH_TODOS):
+    case REQUEST(MovieActionType.FETCH_MOVIE):
       return { ...state, loading: true };
-    case FAILURE(DemoActionType.FETCH_TODOS):
+    case FAILURE(MovieActionType.FETCH_MOVIE):
       return { ...state, loading: false };
-    case SUCCESS(DemoActionType.FETCH_TODOS):
+    case SUCCESS(MovieActionType.FETCH_MOVIE):
       return { movie: payload.data, loading: false };
     default:
       return state;
