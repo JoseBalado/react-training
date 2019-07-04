@@ -5,6 +5,6 @@ export enum DemoActionType {
   FETCH_TODOS = "@@demo/FETCH_TODOS"
 }
 
-export interface IDemo_TodoState extends ICommonState {
+export interface IMovieState extends ICommonState {
   movie: IMovie;
 }
