@@ -1,6 +1,6 @@
 import * as React from "react";
 import { IRootState } from "../../../store/model";
-import { fetchTodos } from "../../../store/demo";
+import { fetchMovie } from "../../../store/omdb";
 import { connect } from "react-redux";
 import { ListComponent } from "../../../shared/components";
 import { CheckCompletionComponent } from "./check-completion.component";
@@ -36,7 +36,7 @@ const columns = [
 
 export class APIDemo extends React.Component<IAPIDemoProps, IAPIDemoState> {
   componentDidMount = () => {
-    this.props.fetchTodos({});
+    this.props.fetchMovie({});
   };
 
   render() {
@@ -59,7 +59,7 @@ const mapStateToProps = ({ demo: { loading, todos: todo } }: IRootState) => ({
 });
 
 const mapDispatchToProps = {
-  fetchTodos
+  fetchMovie
 };
 
 export const OMDbAPIComponent = connect(
