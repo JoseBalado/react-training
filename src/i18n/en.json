@@ -1,0 +1,152 @@
+{
+  "ACTIONS": {
+    "ADD": "Add",
+    "APPLY": "Apply",
+    "BACK": "Back",
+    "CANCEL": "Cancel",
+    "CLEAR": "Clear",
+    "CLOSE": "Close",
+    "COMMIT": "Commit",
+    "DEFAULT": "Default",
+    "DELETE": "Delete",
+    "DOWNLOAD_FILE": "Download File",
+    "DOWNLOAD_TO_CSV": "Download List",
+    "EDIT": "Edit",
+    "EXPORT": "Export",
+    "FILTER": "Filter",
+    "REMOVE": "Remove",
+    "RESET": "Reset Changes",
+    "RETURN": "Return",
+    "SEARCH": "Search",
+    "SIGN_IN": "Sign In",
+    "SORT": "Sort",
+    "SUBMIT": "Submit",
+    "UPLOAD": "Upload"
+  },
+  "ERRORS": {
+    "BAD_REQUEST": {
+      "BODY": "The requested action is forbidden.",
+      "TITLE": "Bad request."
+    },
+    "CONFLICT": {
+      "BODY": "There is a conflict with the current state of the target resource.",
+      "TITLE": "The request could not be completed."
+    },
+    "DEFAULT": {
+      "BODY": "Please try again later.",
+      "TITLE": "An error has occurred."
+    },
+    "EXPIRED": {
+      "BODY": "We need to authenticate you, Please log in.",
+      "TITLE": "You have been logged out"
+    },
+    "NOT_FOUND": {
+      "BODY": "The requested resource could not be found.",
+      "TITLE": "Not found."
+    },
+    "UNAUTHORISED": {
+      "BODY": "You do not have the required authorisation to access this resource.",
+      "TITLE": "Unauthorised access."
+    },
+    "VALIDATION": {
+      "TITLE": "Validation error occured. Please resolve the following issues."
+    }
+  },
+  "HEADERS": {
+    "APP_TITLE": "React Boiler Plate",
+    "CONTENT": "Content",
+    "HOME": "Home",
+    "LIST": "Item(s)"
+  },
+  "MENU": {
+    "HOME": "Home",
+    "CONFIRM": "Confirm Dialog",
+    "ALERT": "Alert",
+    "API": "Api"
+  },
+  "LABELS": {
+    "ADVANCED_SEARCH": "Advanced Search",
+    "ALPHABETICAL": "Alphabetical",
+    "COLUMN": "Column",
+    "CONNECTION": "Connection",
+    "COPYRIGHT": "React | Boiler Plate {year}",
+    "DATE_CREATED": "Date Created",
+    "DATE_RANGE": "Date Range",
+    "DELETE_SELECTED": "Delete Selected",
+    "DESCRIPTION": "Description",
+    "DRAG_AND_DROP_OR_SELECT_FILES": "Drag and Drop or Select File(s)",
+    "END_DATE": "End Date",
+    "ERROR": "Error",
+    "FILTERS": "Filters",
+    "FLIGHT": "Flight",
+    "MOVIE": "Movie",
+    "NAME": "Name",
+    "NEWEST_FIRST": "Newest First",
+    "NONE": "None",
+    "NOTES": "Notes",
+    "OLDEST_FIRST": "Oldest First",
+    "PAGINATION_FOOTER": "of {pages}",
+    "PAGINATION_INFO": "Showing {start} to {end} of {total} ",
+    "PASSWORD": "Password",
+    "ROW": "Row",
+    "UUID": "UUID",
+    "WELCOME": "Welcome You are all Set"
+  },
+  "DEMO": {
+    "TITLE": "Title",
+    "USERID": "User_ID",
+    "COMPLETED": "COMPLETED",
+    "SINGLE_CONFIRMATION": {
+      "TITLE": "Single Confirmation Message",
+      "BODY": "This is a Single Confirmation Message"
+    },
+    "DOUBLE_CONFIRMATION": {
+      "TITLE": "Double Confirmation Message",
+      "BODY": "This is a Double Confirmation Message. Another message will follow this"
+    },
+    "ALERT": {
+      "TITLE": "Display Alert",
+      "BODY": "This is a Demo for the in-built alert components"
+    }
+  },
+  "MESSAGES": {},
+  "PAGES": {
+    "MAIN_TITLE": "React Boiler Plate"
+  },
+  "PLACEHOLDERS": {},
+  "SUCCESS": {
+    "DEFAULT": {
+      "TITLE": "Request Successful"
+    }
+  },
+  "VALIDATION": {
+    "ALPHABETS": "Only alphabets are allowed",
+    "EMAIL": "Please enter a valid email",
+    "END_DATE_AFTER_START_DATE": "End date should be after or equal to the start date",
+    "MAX_LENGTH": "The fields current length is above the maximum allowed length.",
+    "MIN_DATE": "The date is below the minimum allowed date",
+    "NUMBERS": "Only numbers are allowed",
+    "PASSWORD": "Invalid Password provided",
+    "PHONE": "Please enter a valid phone number without '-'",
+    "REQUIRED": "Required field",
+    "START_DATE_BEFORE_END_DATE": "Start date should be before or equal to end date",
+    "USERNAME": "Only characters, numbers and special char (.-_@) are allowed"
+  },
+  "WARNINGS": {
+    "CONFIRMATION_DELETE": {
+      "BODY": "Are you sure you want to permanently delete the following item(s)?",
+      "TITLE": "Delete {name}?"
+    },
+    "DEFAULT": {
+      "BODY": "Please try again later.",
+      "TITLE": "Something went wrong."
+    },
+    "IRRIVERSABLE": {
+      "BODY": "This action is irreversible.",
+      "TITLE": "Are you sure you want to continue?"
+    },
+    "OPTIMISTIC_LOCKING": {
+      "TITLE": "Optimistic Locking Error."
+    }
+  }
+}
