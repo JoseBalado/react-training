@@ -3,7 +3,11 @@ import { IMovieState, MovieActionType } from "./model";
 import { REQUEST, FAILURE, SUCCESS } from "../../shared/constants";
 
 const initialState: IMovieState = {
-  movie: { Title: '' },
+  movie: {
+    Title: '',
+    Plot: '',
+    Poster: ''
+  },
   loading: false
 };
 

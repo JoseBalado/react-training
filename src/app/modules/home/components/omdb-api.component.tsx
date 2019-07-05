@@ -3,6 +3,8 @@ import { IRootState } from "../../../store/model";
 import { fetchMovie } from "../../../store/omdb";
 import { connect } from "react-redux";
 
+import  { PaperSheet } from "./omdb-paper.component"
+
 type StateProps = ReturnType<typeof mapStateToProps>;
 type DispatchProps = typeof mapDispatchToProps;
 
@@ -12,17 +14,22 @@ export interface IOMDbAPIState {}
 
 export class OMDbAPI extends React.Component<IOMDbAPIProps, IOMDbAPIState> {
   componentDidMount = () => {
-    this.props.fetchMovie({});
+    // Default movie 'Lego'
+    this.props.fetchMovie('Lego');
   };
 
   render() {
-    const { loading, movie } = this.props;
+    const { loading, movie, fetchMovie } = this.props;
     console.log('loading', loading)
     console.log('movie', movie)
     return (
       <div>
-        {movie.Title}
-        {loading}
+        <PaperSheet
+          Title={movie.Title}
+          Plot={movie.Plot}
+          Poster={movie.Poster}
+          onSubmit={fetchMovie}
+        />
       </div>
     );
   }
