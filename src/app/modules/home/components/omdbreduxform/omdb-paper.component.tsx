@@ -16,6 +16,8 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
+const greetTheUser = (user: any) => alert(`Hi, ${user.firstName} ${user.lastName}!`);
+
 export const ReduxPaperSheet: React.FC<IMovie & { onSubmit: (Title: string)=> void }> = props => {
   const classes = useStyles();
   console.log('props', props);
@@ -26,9 +28,10 @@ export const ReduxPaperSheet: React.FC<IMovie & { onSubmit: (Title: string)=> vo
     <div>
       <Paper className={classes.root}>
         <TextFields
-           onSubmit={onSubmit}
+          onSubmit={onSubmit}
         />
         <SimpleForm 
+          onSubmit={greetTheUser}
         />
         <Typography variant="h5" component="h3">
           Title
