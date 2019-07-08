@@ -8,11 +8,11 @@ import  { PaperSheet } from "./omdb-paper.component"
 type StateProps = ReturnType<typeof mapStateToProps>;
 type DispatchProps = typeof mapDispatchToProps;
 
-export interface IOMDbAPIProps extends StateProps, DispatchProps {}
+export interface IOMDbReduxAPIProps extends StateProps, DispatchProps {}
 
-export interface IOMDbAPIState {}
+export interface IOMDbReduxAPIState {}
 
-export class OMDbAPI extends React.Component<IOMDbAPIProps, IOMDbAPIState> {
+export class OMDbReduxAPI extends React.Component<IOMDbReduxAPIProps, IOMDbReduxAPIState> {
   componentDidMount = () => {
     // Default movie 'Lego'
     this.props.fetchMovie('Lego');
@@ -47,4 +47,4 @@ const mapDispatchToProps = {
 export const OMDbReduxFormAPIComponent = connect(
   mapStateToProps,
   mapDispatchToProps
-)(OMDbAPI);
+)(OMDbReduxAPI);
