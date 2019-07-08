@@ -16,11 +16,11 @@ export const reduxMovieReducer: Reducer<IReduxMovieState> = (
   { type, payload }: AnyAction
 ) => {
   switch (type) {
-    case REQUEST(MovieActionType.FETCH_MOVIE):
+    case REQUEST(MovieActionType.FETCH_REDUX_MOVIE):
       return { ...state, loading: true };
-    case FAILURE(MovieActionType.FETCH_MOVIE):
+    case FAILURE(MovieActionType.FETCH_REDUX_MOVIE):
       return { ...state, loading: false };
-    case SUCCESS(MovieActionType.FETCH_MOVIE):
+    case SUCCESS(MovieActionType.FETCH_REDUX_MOVIE):
       return { movie: payload.data, loading: false };
     default:
       return state;
