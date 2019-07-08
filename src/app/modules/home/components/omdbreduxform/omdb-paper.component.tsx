@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography';
 
 import { IMovie } from '../../../../models/movie.model'
 
-import { TextFields } from './text-field-omdb.component';
+import  SimpleForm from './omdb-reduxform-simple-form';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -19,12 +19,12 @@ export const PaperSheet: React.FC<IMovie & { onSubmit: (Title: string)=> void }>
   const classes = useStyles();
   console.log('props', props);
   const { Title, Plot, Poster, onSubmit } = props;
+  console.log('onSubmit', onSubmit);
 
   return (
     <div>
       <Paper className={classes.root}>
-        <TextFields 
-           onSubmit={onSubmit}
+        <SimpleForm 
         />
         <Typography variant="h5" component="h3">
           Title
