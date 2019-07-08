@@ -35,7 +35,7 @@ export class OMDbReduxAPI extends React.Component<IOMDbReduxAPIProps, IOMDbRedux
   }
 }
 
-const mapStateToProps = ({ movie: { loading, movie } }: IRootState) => ({
+const mapStateToProps = ({ reduxMovie: { loading, movie } }: IRootState) => ({
   movie,
   loading
 });
