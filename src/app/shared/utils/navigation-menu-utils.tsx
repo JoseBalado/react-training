@@ -4,6 +4,7 @@ import {
   NotificationImportantOutlined,
   MessageOutlined,
   LocalMovies,
+  Movie,
   NetworkCheckOutlined
 } from "@material-ui/icons/";
 
@@ -32,5 +33,10 @@ export const getNavMenu = () => [
     title: "MENU.OMDb",
     icon: <LocalMovies />,
     link: "/home/omdb"
-  }
+  },
+  {
+    title: "MENU.OMDb.REDUXFORM",
+    icon: <Movie />,
+    link: "/home/reduxomdb"
+  },
 ];
