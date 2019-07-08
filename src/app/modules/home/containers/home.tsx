@@ -8,7 +8,7 @@ import { withRouter, RouteComponentProps } from "react-router-dom";
 import { ConfirmationDemoComponent } from "../components/confirmation-demo.component";
 import { AlertDemoComponent } from "../components/alert-demo.component";
 import { APIDemoComponent } from "../components/api-demo.component";
-import { OMDbAPIComponent } from "../components/omdb-api.component";
+import { OMDbAPIComponent } from "../components/omdb/omdb-api.component";
 const styles = (theme: Theme) =>
   createStyles({
     linkStyle: {

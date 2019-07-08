@@ -3,7 +3,7 @@ import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 
-import { IMovie } from '../../../models/movie.model'
+import { IMovie } from '../../../../models/movie.model'
 
 import { TextFields } from './text-field-omdb.component';
 
