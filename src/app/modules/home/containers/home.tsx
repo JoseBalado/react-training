@@ -9,6 +9,7 @@ import { ConfirmationDemoComponent } from "../components/confirmation-demo.compo
 import { AlertDemoComponent } from "../components/alert-demo.component";
 import { APIDemoComponent } from "../components/api-demo.component";
 import { OMDbAPIComponent } from "../components/omdb/omdb-api.component";
+import { OMDbReduxFormAPIComponent } from "../components/omdbreduxform/omdb-reduxform-api.component";
 const styles = (theme: Theme) =>
   createStyles({
     linkStyle: {
@@ -44,6 +45,7 @@ export class HomeComponent extends React.Component<
         {type === "alert" && <AlertDemoComponent />}
         {type === "api" && <APIDemoComponent />}
         {type === "omdb" && <OMDbAPIComponent />}
+        {type === "omdbreduxform" && <OMDbReduxFormAPIComponent />}
       </>
     );
   }

@@ -37,6 +37,6 @@ export const getNavMenu = () => [
   {
     title: "MENU.OMDb.REDUXFORM",
     icon: <Movie />,
-    link: "/home/reduxomdb"
+    link: "/home/omdbreduxform"
   },
 ];
