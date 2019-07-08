@@ -1,6 +1,6 @@
 import * as React from "react";
 import { IRootState } from "../../../../store/model";
-import { fetchMovie } from "../../../../store/omdb";
+import { fetchMovie } from "../../../../store/omdb-reduxform";
 import { connect } from "react-redux";
 
 import  { PaperSheet } from "./omdb-paper.component"
