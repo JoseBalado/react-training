@@ -3,7 +3,7 @@ import { IRootState } from "../../../../store/model";
 import { fetchMovie } from "../../../../store/omdb-reduxform";
 import { connect } from "react-redux";
 
-import  { PaperSheet } from "./omdb-paper.component"
+import  { ReduxPaperSheet } from "./omdb-paper.component"
 
 type StateProps = ReturnType<typeof mapStateToProps>;
 type DispatchProps = typeof mapDispatchToProps;
@@ -24,7 +24,7 @@ export class OMDbReduxAPI extends React.Component<IOMDbReduxAPIProps, IOMDbRedux
     console.log('movie', movie)
     return (
       <div>
-        <PaperSheet
+        <ReduxPaperSheet
           Title={movie.Title}
           Plot={movie.Plot}
           Poster={movie.Poster}
