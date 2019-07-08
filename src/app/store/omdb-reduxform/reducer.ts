@@ -1,8 +1,8 @@
 import { Reducer, AnyAction } from "redux";
-import { IMovieState, MovieActionType } from "./model";
+import { IReduxMovieState, MovieActionType } from "./model";
 import { REQUEST, FAILURE, SUCCESS } from "../../shared/constants";
 
-const initialState: IMovieState = {
+const initialState: IReduxMovieState = {
   movie: {
     Title: '',
     Plot: '',
@@ -11,8 +11,8 @@ const initialState: IMovieState = {
   loading: false
 };
 
-export const movieReducer: Reducer<IMovieState> = (
-  state: IMovieState = initialState,
+export const reduxMovieReducer: Reducer<IReduxMovieState> = (
+  state: IReduxMovieState = initialState,
   { type, payload }: AnyAction
 ) => {
   switch (type) {

@@ -3,6 +3,7 @@ import { IAlertState } from "./alert";
 import { IConfirmationState } from "./confirmation";
 import { IDemo_TodoState } from "./demo/model";
 import { IMovieState } from "./omdb/model";
+import { IReduxMovieState } from "./omdb-reduxform/model";
 
 export interface ICommonState {
   loading: boolean;
@@ -15,4 +16,5 @@ export interface IRootState {
   demo: IDemo_TodoState;
   router: RouterState;
   movie: IMovieState;
+  reduxMovie: IReduxMovieState;
 }

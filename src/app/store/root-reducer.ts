@@ -6,11 +6,13 @@ import { connectRouter } from "connected-react-router";
 import { confirmationReducer } from "./confirmation";
 import { demoReducer } from "./demo/reducer";
 import { movieReducer } from "./omdb/reducer";
+import { reduxMovieReducer } from "./omdb-reduxform/reducer";
 
 export const rootReducer = combineReducers<IRootState>({
   alert: alertReducer,
   confirmation: confirmationReducer,
   demo: demoReducer,
   movie: movieReducer,
+  reduxMovie: reduxMovieReducer,
   router: connectRouter(history)
 });
