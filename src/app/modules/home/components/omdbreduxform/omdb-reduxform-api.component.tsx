@@ -15,7 +15,7 @@ export interface IOMDbReduxAPIState {}
 export class OMDbReduxAPI extends React.Component<IOMDbReduxAPIProps, IOMDbReduxAPIState> {
   componentDidMount = () => {
     // Default movie 'Lego'
-    this.props.fetchMovie({ name: 'Lego'});
+    this.props.fetchMovie({ name: 'Batman'});
   };
 
   render() {
