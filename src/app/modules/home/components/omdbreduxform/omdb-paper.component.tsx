@@ -15,11 +15,10 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-export const ReduxPaperSheet: React.FC<IMovie & { onSubmit: (Title: any)=> void }> = props => {
+export const ReduxPaperSheet: React.FC<IMovie & { onSubmit: (movie: any)=> void }> = props => {
   const classes = useStyles();
   console.log('props', props);
   const { Title, Plot, Poster, onSubmit } = props;
-  console.log('onSubmit', onSubmit);
 
   return (
     <div>
