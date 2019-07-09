@@ -23,14 +23,12 @@ export class OMDbReduxAPI extends React.Component<IOMDbReduxAPIProps, IOMDbRedux
     console.log('loading', loading)
     console.log('movie', movie)
     return (
-      <div>
-        <ReduxPaperSheet
-          Title={movie.Title}
-          Plot={movie.Plot}
-          Poster={movie.Poster}
-          onSubmit={fetchMovie}
-        />
-      </div>
+      <ReduxPaperSheet
+        Title={movie.Title}
+        Plot={movie.Plot}
+        Poster={movie.Poster}
+        onSubmit={fetchMovie}
+      />
     );
   }
 }
