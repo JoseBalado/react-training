@@ -1,10 +1,17 @@
 import React from 'react'
-import { Field, reduxForm } from 'redux-form'
+import { Field, reduxForm, InjectedFormProps, FormErrors } from 'redux-form'
 
-const SimpleForm = (props: any) => {
-  const { handleSubmit, pristine, reset, submitting } = props
+export interface IMovieForm {
+  name: string;
+}
+interface IFormProps {
+  onSubmit: (value: Partial<IMovieForm>) => void | FormErrors<FormData> | Promise<any>;
+}
+
+const SimpleForm = (props: IFormProps & InjectedFormProps<Partial<IMovieForm>, IFormProps >) => {
+  const { handleSubmit, pristine, reset, submitting, onSubmit } = props
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit(onSubmit as any)}>
       <div>
         <label>Movie Name</label>
         <div>
@@ -19,6 +26,6 @@ const SimpleForm = (props: any) => {
   )
 }
 
-export default reduxForm({
+export default reduxForm<Partial<IMovieForm>,IFormProps>({
   form: 'simple'  // a unique identifier for this form
 })(SimpleForm)

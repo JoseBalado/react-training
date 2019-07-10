@@ -5,7 +5,8 @@ import Typography from '@material-ui/core/Typography';
 
 import { IMovie } from '../../../../models/movie.model'
 
-import  SimpleForm from './omdb-reduxform-simple-form';
+import  SimpleForm, { IMovieForm } from './omdb-reduxform-simple-form';
+import { FormErrors } from 'redux-form';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -15,7 +16,7 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-export const ReduxPaperSheet: React.FC<IMovie & { onSubmit: (movie: any)=> void }> = props => {
+export const ReduxPaperSheet: React.FC<IMovie & {onSubmit: (value: Partial<IMovieForm>) => void | FormErrors<FormData> | Promise<any>}> = props => {
   const classes = useStyles();
   console.log('props', props);
   const { Title, Plot, Poster, onSubmit } = props;

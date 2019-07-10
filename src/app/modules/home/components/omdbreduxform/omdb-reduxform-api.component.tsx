@@ -4,6 +4,7 @@ import { fetchMovie } from "../../../../store/omdb-reduxform";
 import { connect } from "react-redux";
 
 import  { ReduxPaperSheet } from "./omdb-paper.component"
+import { IMovieForm } from './omdb-reduxform-simple-form';
 
 type StateProps = ReturnType<typeof mapStateToProps>;
 type DispatchProps = typeof mapDispatchToProps;
@@ -18,8 +19,12 @@ export class OMDbReduxAPI extends React.Component<IOMDbReduxAPIProps, IOMDbRedux
     this.props.fetchMovie({ name: 'Batman'});
   };
 
+  onFormSubmit = (value: Partial<IMovieForm>) => {
+    this.props.fetchMovie({ name: value.name});
+  }
+
   render() {
-    const { loading, movie, fetchMovie } = this.props;
+    const { loading, movie } = this.props;
     console.log('loading', loading)
     console.log('movie', movie)
     return (
@@ -27,7 +32,7 @@ export class OMDbReduxAPI extends React.Component<IOMDbReduxAPIProps, IOMDbRedux
         Title={movie.Title}
         Plot={movie.Plot}
         Poster={movie.Poster}
-        onSubmit={fetchMovie}
+        onSubmit={this.onFormSubmit}
       />
     );
   }
